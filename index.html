@@ -5,12 +5,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CyperPhone</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/app.css" />
 </head>
 
@@ -50,10 +54,197 @@
                     </div>
                 </div>
             </section>
-            <section class="products"></section>
+            <section class="products">
+                <div class="products__container container">
+                    <div class="products__content">
+                        <h2 class="products__title">-Featured Products-</h2>
+                        <div class="products__list row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="products__card">
+                                    <div class="card__image"><img src="./images/product1.png" alt="headphone"></div>
+                                    <div class="card__body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="card__title">CyberBeats</h3>
+                                                <p class="card__subtitle">Accessories</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="card__price">$99.99</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card__rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <button class="card__btnBuy--shadow">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="products__card">
+                                    <div class="card__image"><img src="./images/product2.png" alt="phone"></div>
+                                    <div class="card__body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="card__title">CyberPhone</h3>
+                                                <p class="card__subtitle">Accessories</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="card__price">$99.99</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card__rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <button class="card__btnBuy--shadow">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="products__card">
+                                    <div class="card__image"><img src="./images/product3.png" alt="tablet"></div>
+                                    <div class="card__body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="card__title">CyberTablet</h3>
+                                                <p class="card__subtitle">Accessories</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="card__price">$99.99</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card__rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <button class="card__btnBuy--shadow">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="products__card">
+                                    <div class="card__image"><img src="./images/product4.png" alt="watch"></div>
+                                    <div class="card__body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="card__title">CyberWatch</h3>
+                                                <p class="card__subtitle">Accessories</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="card__price">$99.99</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card__rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <button class="card__btnBuy--shadow">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="products__card">
+                                    <div class="card__image"><img src="./images/product5.png" alt="glass"></div>
+                                    <div class="card__body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="card__title">CyberGlass</h3>
+                                                <p class="card__subtitle">Accessories</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="card__price">$99.99</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card__rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <button class="card__btnBuy--shadow">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="products__card">
+                                    <div class="card__image"><img src="./images/product6.png" alt="gadget"></div>
+                                    <div class="card__body">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h3 class="card__title">CyberGadget</h3>
+                                                <p class="card__subtitle">Accessories</p>
+                                            </div>
+                                            <div>
+                                                <h3 class="card__price">$99.99</h3>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div class="card__rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            <button class="card__btnBuy--shadow">
+                                                <i class="fa fa-shopping-cart"></i>
+                                                Buy Now
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
