@@ -130,7 +130,7 @@ table {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 * {
@@ -412,5 +412,40 @@ html {
 
 .products .products__container .products__list .products__card .card__body .card__rating i {
   font-weight: 900;
+}
+
+.footer {
+  background-color: #2a73dd;
+  padding-bottom: 60px;
+  color: #fff;
+}
+
+.footer img {
+  margin-bottom: 60px;
+}
+
+.footer .footer__copyright {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.footer .footer__nav .footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.footer .footer__nav .footer__nav-list .footer__nav-item {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+}
+
+.footer .footer__nav .footer__nav-list .footer__nav-item a {
+  color: #fff;
 }
 /*# sourceMappingURL=app.css.map */
