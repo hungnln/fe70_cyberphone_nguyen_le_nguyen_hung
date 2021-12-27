@@ -4,27 +4,35 @@
   width: 100%;
   background-color: #f5f9fe;
   box-shadow: 0 2px 4px #e2ebfc;
-  padding: 10px;
+  z-index: 99999;
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
     .header__logo {
       a {
-        font-size: 2.5rem;
+        font-size: 2.52rem;
+        line-height: 3.78rem;
         font-weight: 600;
         color: $primary-main;
       }
     }
     .header__nav {
+      justify-content: flex-end;
       .header__nav-list {
         display: flex;
         .header__nav-item {
           padding: 25px;
           a {
             font-size: 1.5rem;
+            line-height: 2.31rem;
             font-weight: 600;
             color: $primary-dark;
+            @include Responsive(MD){
+              text-align: center;
+            }
             &::after {
               content: "";
               width: 100%;

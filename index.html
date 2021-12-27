@@ -19,23 +19,31 @@
 </head>
 
 <body>
-    <div class="wrapper" style="position: relative;">
+    <div class="">
         <header class="header">
-            <div class="header__container container">
-                <div class="header__logo">
-                    <a href="#">CyberPhone</a>
+            <div class="container">
+                <div class="header__container navbar navbar-expand-lg ">
+                <div class="header__logo ">
+                    <a href="#" class="navbar-brand ">CyberPhone</a>
                 </div>
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item header__nav-item--active">
-                            <a href="#">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon ">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </button>
+                <nav class="header__nav collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="header__nav-list navbar-nav">
+                        <li class="header__nav-item header__nav-item--active nav-item">
+                            <a href="#" class="nav-link">Home</a>
                         </li>
-                        <li class="header__nav-item"><a href="#">About</a></li>
-                        <li class="header__nav-item"><a href="#">Shop</a></li>
-                        <li class="header__nav-item"><a href="#">Block</a></li>
-                        <li class="header__nav-item"><a href="#">Contact</a></li>
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">Shop</a></li>
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">Block</a></li>
+                        <li class="header__nav-item nav-item"><a href="#" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
+                
+            </div>
             </div>
         </header>
         <main>
@@ -46,7 +54,7 @@
                         <h2 class="banner__subtitle">Best Smartphone of 2021!</h2>
                         <p class="banner__description">Cras tortor mi, lobortis quis ornare in, varius scelerisque urna.
                             Vivamus imperdiet dolor nec odio convallis consequat.</p>
-                        <button class="btn btn--outline">More Info</button>
+                        <button class="btn btn--outline"><i class="fa fa-info-circle"></i> More Info</button>
                         <button class="btn btn--container">Shop</button>
                     </div>
                     <div class="banner__image">
