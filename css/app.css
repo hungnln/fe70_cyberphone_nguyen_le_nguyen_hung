@@ -171,6 +171,8 @@ html {
   background: transparent;
   color: #2a73dd;
   border: 2px solid #2a73dd;
+  -webkit-box-shadow: 0 3px 6px #c9d8f4;
+          box-shadow: 0 3px 6px #c9d8f4;
   margin-right: 7px;
 }
 
@@ -194,6 +196,7 @@ html {
   border: none;
   border-radius: 4px;
   letter-spacing: 0.042rem;
+  line-height: 1.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: #2a73dd;
@@ -208,6 +211,13 @@ html {
           box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
 }
 
+.navbar-toggler-icon {
+  color: #1d365e;
+  font-size: 2.24rem;
+  line-height: 3.36rem;
+  font-weight: 900;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -215,7 +225,7 @@ html {
   background-color: #f5f9fe;
   -webkit-box-shadow: 0 2px 4px #e2ebfc;
           box-shadow: 0 2px 4px #e2ebfc;
-  padding: 10px;
+  z-index: 99999;
 }
 
 .header__container {
@@ -228,12 +238,21 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header__container .header__logo a {
-  font-size: 2.5rem;
+  font-size: 2.52rem;
+  line-height: 3.78rem;
   font-weight: 600;
   color: #2a73dd;
+}
+
+.header__container .header__nav {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header__container .header__nav .header__nav-list {
@@ -248,8 +267,15 @@ html {
 
 .header__container .header__nav .header__nav-list .header__nav-item a {
   font-size: 1.5rem;
+  line-height: 2.31rem;
   font-weight: 600;
   color: #1d365e;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__container .header__nav .header__nav-list .header__nav-item a {
+    text-align: center;
+  }
 }
 
 .header__container .header__nav .header__nav-list .header__nav-item a::after {
@@ -294,7 +320,19 @@ html {
   padding: 225px 0;
 }
 
-.banner .banner__container {
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 150px 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner {
+    padding: 100px 0;
+  }
+}
+
+.banner__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,14 +342,20 @@ html {
           align-items: center;
 }
 
-.banner .banner__container .banner__content .banner__title {
+.banner__container .banner__content .banner__title {
   font-size: 7rem;
   font-weight: 700;
   color: #2a73dd;
   margin-bottom: 7px;
 }
 
-.banner .banner__container .banner__content .banner__subtitle {
+@media only screen and (max-width: 768px) {
+  .banner__container .banner__content .banner__title {
+    font-size: 4.4rem;
+  }
+}
+
+.banner__container .banner__content .banner__subtitle {
   font-size: 2.2rem;
   font-weight: 600;
   color: #1d365e;
@@ -319,19 +363,19 @@ html {
   margin-bottom: 30px;
 }
 
-.banner .banner__container .banner__content .banner__description {
+.banner__container .banner__content .banner__description {
   font-size: 1.5rem;
   font-weight: 400;
   color: #656774;
   margin-bottom: 25px;
 }
 
-.banner .banner__image img {
+.banner__image img {
   max-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-  .banner .banner__image img {
+  .banner__image img {
     display: none;
   }
 }
@@ -424,28 +468,36 @@ html {
   margin-bottom: 60px;
 }
 
-.footer .footer__copyright {
+.footer__copyright {
   font-size: 1.4rem;
   line-height: 2.1rem;
 }
 
-.footer .footer__nav .footer__nav-list {
+.footer__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
 
-.footer .footer__nav .footer__nav-list .footer__nav-item {
+.footer__nav-list .footer__nav-item {
   font-size: 1.4rem;
   line-height: 1.4rem;
   font-weight: 600;
   padding: 0.7rem 1.4rem;
 }
 
-.footer .footer__nav .footer__nav-list .footer__nav-item a {
+.footer__nav-list .footer__nav-item a {
   color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer__nav-list .footer__nav-item a:hover {
+  opacity: 0.75;
 }
 /*# sourceMappingURL=app.css.map */
