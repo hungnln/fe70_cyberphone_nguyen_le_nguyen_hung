@@ -3,7 +3,13 @@
   background-size: cover;
   background-position: center bottom;
   padding: 225px 0;
-  .banner__container {
+  @include Responsive(MD){
+    padding: 150px 0;
+  }
+  @include Responsive(SM){
+    padding: 100px 0;
+  }
+  &__container {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -13,6 +19,9 @@
         font-weight: 700;
         color: $primary-main;
         margin-bottom: 7px;
+        @include Responsive(MD){
+          font-size: 4.4rem;
+        }
       }
       .banner__subtitle {
         font-size: 2.2rem;
@@ -29,7 +38,7 @@
       }
     }
   }
-  .banner__image {
+  &__image {
     img {
       max-width: 100%;
 
