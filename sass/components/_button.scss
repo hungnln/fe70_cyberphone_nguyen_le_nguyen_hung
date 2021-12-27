@@ -14,8 +14,9 @@
   background: transparent;
   color: $primary-main;
   border: 2px solid $primary-main;
+  box-shadow: 0 3px 6px #c9d8f4;
   margin-right: 7px;
-  &:hover{
+  &:hover {
     background: $primary-main;
   }
 }
@@ -23,7 +24,7 @@
   background: linear-gradient(120deg, #60a4f4, $primary-main);
   color: white;
   padding: 15.5px 46px;
-  &:hover {  
+  &:hover {
     opacity: 0.75;
   }
 }
@@ -33,6 +34,7 @@
   border: none;
   border-radius: 4px;
   letter-spacing: 0.042rem;
+  line-height: 1.5rem;
   font-size: 1rem;
   font-weight: 600;
   color: $primary-main;
@@ -40,5 +42,14 @@
   transition: 0.5s;
   &:hover {
     box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+  }
+}
+.navbar-toggler {
+  &-icon { 
+      color: $primary-dark;
+      font-size: 2.24rem;
+      line-height: 3.36rem;
+      font-weight: 900;
+    
   }
 }
